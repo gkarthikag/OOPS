@@ -1,5 +1,5 @@
-public class Animal {
-     private String name ="gk";
+public abstract class Animal {
+     private String name ;
 
     public String getName() {
         return name;
@@ -15,17 +15,12 @@ public class Animal {
     public Animal(String name){
         this.name = name;
     }
-    public void eat(){
-        System.out.println("MyCat is Eating");
-    }
-    public void makeNoise(){
-        System.out.println( getName()+" is making noise");
-    }
+    public abstract void eat();
+    public abstract void makeNoise();
+
     public void sleep(){
         System.out.println("Sleeping");
     }
-    public void roam(){
-        System.out.println("Roaming...");
-    }
+    public abstract void roam();
 
 }

@@ -3,24 +3,29 @@
 public class Main {
     public static void main(String[] args) {
 
-        Animal animal = new Animal("animal");
+        Animal animal = new Bat("batt");
         animal.makeNoise();
 
-        Cat cat = new Cat("cat_name");
-        cat.makeNoise();
+        Bird bird = new Bird("bird_name");
+        bird.makeNoise();
+        bird.roam();
 
         Dog dog = new Dog();
+        dog.eat();
+        dog.roam();
+        dog.setName("puppy");
+        System.out.println( dog.getName());
 
 
-        Animal an = new Cat("cat_name");
-        an.makeNoise();
-       // an.jump(); not possible hence follow below one
-        Cat c = (Cat)an;
-        c.jump();
-
-         AnimalUtils util = new AnimalUtils();
-         util.addanimal(cat);
-         util.addanimal(dog);
+//        Animal an = new Cat("cat_name");
+//        an.makeNoise();
+//       // an.jump(); not possible hence follow below one
+//        Cat c = (Cat)an;
+//        c.jump();
+//
+//         AnimalUtils util = new AnimalUtils();
+//         util.addanimal(bird);
+//         util.addanimal(dog);
 
 
 
@@ -31,19 +36,8 @@ public class Main {
 //        A.eat();
 //        A.makeNoise();
 //        A.roam();
-//        A.sleep();
-
-//        Address add = new Address("Bangalore","Karnataka",463125);
-//       add.displayAddress();
 //
-//        Person P = new Person("GssK",22,add);
-//        P.displayInfo();
-//
-//        Employee E = new Employee();
-//        E.applyForLeave();
-//        E.displayInfo();
-//
-//        Student S = new Student(21,'A');
-//        S.displayInfo();
     }
+
+
 }
