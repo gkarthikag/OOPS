@@ -19,7 +19,7 @@ public class Animal {
         System.out.println("MyCat is Eating");
     }
     public void makeNoise(){
-        System.out.println("Dog is making noise");
+        System.out.println( getName()+" is making noise");
     }
     public void sleep(){
         System.out.println("Sleeping");
@@ -27,4 +27,5 @@ public class Animal {
     public void roam(){
         System.out.println("Roaming...");
     }
+
 }
